@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:text="Laporan"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/borderkedua"
+            android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:text="Pencarian : "
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+            <EditText
+                android:id="@+id/cariResi"
+                android:layout_weight="1"
+                android:hint="No.Resi"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:background="@drawable/borderkedua"
+            android:gravity="center"
+            android:padding="5dp">
+            <TextView
+                android:text="No. Resi"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="Nama Pengirim"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="Nama Jenazah"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:text="Status"
+                android:layout_weight="1"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

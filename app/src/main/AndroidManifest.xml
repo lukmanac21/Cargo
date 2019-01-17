@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.reza.jenazah">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cilik"
+        android:label="Cargo Jenazah"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="Beranda"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".login1"
+            android:label="Login">
+        </activity>
+        <activity
+            android:name=".help"
+            android:label="Help">
+        </activity>
+        <activity
+            android:name=".tambah"
+            android:label="tambah">
+        </activity>
+
+        <activity
+            android:name=".cektarif"
+            android:label="Tarif">
+        </activity>
+        <activity
+            android:name=".laporan"
+            android:label="Laporan">
+        </activity>
+        <activity
+            android:name=".cekjenazah"
+            android:label="Jenazah">
+        </activity>
+        <activity
+            android:name=".edit_laporan"
+            android:label="Detail">
+        </activity>
+        <activity
+            android:name=".edit"
+            android:label="edit">
+        </activity>
+
+        <activity
+            android:name=".admin"
+            android:label="Admin"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

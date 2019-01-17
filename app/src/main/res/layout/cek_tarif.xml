@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tujuan: "/>
+        <Spinner
+            android:id="@+id/pulauCari"
+            android:entries="@array/kota"
+            android:layout_marginLeft="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Via: "/>
+        <Spinner
+            android:id="@+id/viaCari"
+            android:entries="@array/via"
+            android:layout_marginLeft="56dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kurir: "/>
+        <Spinner
+            android:id="@+id/viaKurir"
+            android:entries="@array/kurir"
+            android:layout_marginLeft="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hari: "/>
+        <Spinner
+            android:id="@+id/hariCari"
+            android:entries="@array/jenis"
+            android:layout_marginLeft="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berat: "/>
+        <Spinner
+            android:id="@+id/berat"
+            android:entries="@array/berat"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/cari"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <TableRow
+            android:background="@drawable/border"
+            android:padding="5dp"
+            android:gravity="center">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Hasil"
+                />
+        </TableRow>
+        <TableRow
+            android:background="@drawable/borderkedua"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/via"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Via"
+                />
+            <TextView
+                android:id="@+id/harga"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Harga"
+                />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/borderketiga"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/viaTampil"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                />
+            <TextView
+                android:id="@+id/hargaTampil"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text=""
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

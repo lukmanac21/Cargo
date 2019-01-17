@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No resi"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nama jenazah"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jenis kelamin"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="umur jenazah"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nama pengirim"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="alamat pengirim"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no telp pengirim"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pulau tujuan"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="alamat tujuan"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tanggal kirim"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="waktu kirim"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="via"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status"/>
+        <TextView
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="total bayar"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/noresi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/namajenazah1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/jk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/umur1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/namapengirim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/alamatp1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/notelp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/pulau1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/alamatt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tanggal1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/waktu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/via2"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/status1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/total_bayar1"
+            android:background="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

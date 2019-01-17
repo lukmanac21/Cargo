@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Nomor Resi"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/resi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Nama Jenazah"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/nama_jenazah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Jenis Kelamin Jenazah"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/laki_laki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="laki-laki"/>
+            <RadioButton
+                android:id="@+id/perempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="perempuan"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Umur Jenazah"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/umur_jenazah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Nama Pengirim"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/nama_pengirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Alamat Pengirim"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/alamat_pengirim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="No.telp"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/No_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Pulau Tujuan"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/TujuanSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/kota"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Alamat Tujuan"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/alamat_tujuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Tanggal Kirim"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <DatePicker
+            android:id="@+id/tanggal_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="115dp"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"
+            android:calendarViewShown="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Waktu Kirim"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/waktu_kirim"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/jenis"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Via"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/ViaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/via"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Status"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/StatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/statusnya"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar"/>
+</LinearLayout>
+</ScrollView>
